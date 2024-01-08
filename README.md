@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Steps for Using the Application
 1. From the backend project directory (sprintfwd-backend), run the script to create a database for the backend and testing.
 2. Run `php artisan migrate` to create the requisite tables.
@@ -43,3 +44,6 @@ country
 # Project_Members (Cross-Reference JOIN table for Many:Many relationship)
 projectID (FK)
 memberID (FK)
+=======
+# sprintfwd-backend
+>>>>>>> 733b0e5f7bca8edc00caf920b3e240d3803e4d36
