@@ -1,7 +1,8 @@
 ### Steps for Using the Application
-1. Make sure to have Composer installed in order to install dependencies for the application. Navigate to the project directory and run `composer install`. 
-2. After installing dependencies, create an .env file (use .env.example as a base) and generate a unique application key with the command: `php artisan key:generate`.
-3. Edit the .env file to specify the database name `DB_DATABASE=teamprojects` and from the backend project directory (sprintfwd-backend), create a database in mySQL: `mysql -u root -p -e "CREATE DATABASE teamprojects;"`. 
+1. Within both the backend and frontend project directories, make sure to have Composer installed in order to install dependencies for the applications. Run `composer install`. 
+2. After installing dependencies, create an .env file (use .env.example as a base) within both directories and generate a unique application key with the command: `php artisan key:generate`.
+3. Create an .env.testing file with the following keys: `APP_ENV=testing` `DB_DATABASE=laravel_test` and generate a application key for the .env.testing file.
+4. Within the backend project directory, edit the .env file to specify the database name `DB_DATABASE=teamprojects` and create a mySQL database: `mysql -u root -p -e "CREATE DATABASE teamprojects;"`. 
 4. Run `php artisan migrate` to create the requisite tables.
 5. The application is broken into a backend application (http://localhost:8000) and a frontend application (http://localhost:8080). 
 6. Run the command `php artisan serve` in one terminal window from backend project directory (sprintfwd-backend) to serve the backend.
@@ -23,6 +24,8 @@
 1. I used DOM manipluation along with asynchronous JavaScript, as well as some storing of 
 global state, for the frontend. In the future, I would prefer to use a framework like
 React to help manage state, as well as perform more efficient UI updates.
+2. Work on asynchronous updates when editing/deleting a member from a team, as well as editing and deleting a team.
+3. Implement the project aspect within the UI.
 
 =============================================================================================
 
